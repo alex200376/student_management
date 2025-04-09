@@ -127,6 +127,4 @@ student_management_system/
 2. **Managing Courses:** Use the "Courses" section to add or edit course offerings.
 3. **Assigning Grades:** Navigate to the "Grades" section and assign grades to students for specific courses.
 
-Feel free to explore and enhance the application by adding new features or functionalities!
-
 ---
