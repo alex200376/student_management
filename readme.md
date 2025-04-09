@@ -130,10 +130,3 @@ student_management_system/
 Feel free to explore and enhance the application by adding new features or functionalities!
 
 ---
-
-### License
-
-This project is open-source. You are welcome to modify, share, or build upon this system for personal or educational use.
-```
-
-This README file provides clear and concise instructions for understanding the project structure, setting up the environment, and running the application. It also highlights the system's main features and defines the roles of various files and folders.
