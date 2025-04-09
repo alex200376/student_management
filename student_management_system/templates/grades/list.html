@@ -1,0 +1,47 @@
+{% extends 'layout.html' %}
+
+{% block title %}Grade List - Student Management System{% endblock %}
+
+{% block content %}
+<div class="d-flex justify-content-between align-items-center mb-4">
+    <h2>Grade List</h2>
+    <a href="{{ url_for('add_grade') }}" class="btn btn-success">Add Grade</a>
+</div>
+
+{% if enrollments %}
+<div class="table-responsive">
+    <table class="table table-striped table-hover">
+        <thead class="table-dark">
+            <tr>
+                <th>Student ID</th>
+                <th>Student Name</th>
+                <th>Course Code</th>
+                <th>Course Name</th>
+                <th>Semester</th>
+                <th>Grade</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for enrollment in enrollments %}
+            <tr>
+                <td>{{ enrollment.student.student_id }}</td>
+                <td>
+                    <a href="{{ url_for('view_student', id=enrollment.student.id) }}">
+                        {{ enrollment.student.name }}
+                    </a>
+                </td>
+                <td>{{ enrollment.course.course_code }}</td>
+                <td>{{ enrollment.course.name }}</td>
+                <td>{{ enrollment.semester }}</td>
+                <td>{{ enrollment.grade if enrollment.grade is not none else 'Not graded' }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+{% else %}
+<div class="alert alert-info">
+    No grade records found. Please click "Add Grade" button to add grades.
+</div>
+{% endif %}
+{% endblock %}

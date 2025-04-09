@@ -1,0 +1,43 @@
+/* Custom styles for Student Management System */
+
+/* Additional padding for the main container */
+.container {
+    padding-bottom: 2rem;
+}
+
+/* Card styling */
+.card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1.5rem;
+}
+
+.card-header {
+    background-color: #f8f9fa;
+}
+
+/* Table styling */
+.table-responsive {
+    overflow-x: auto;
+}
+
+/* Button spacing */
+.btn-group .btn {
+    margin-right: 0.25rem;
+}
+
+/* Footer styling */
+footer {
+    margin-top: 2rem;
+    padding-top: 1rem;
+    border-top: 1px solid #dee2e6;
+    color: #6c757d;
+}
+
+/* Dashboard card styles */
+.index-card {
+    transition: transform 0.3s;
+}
+
+.index-card:hover {
+    transform: translateY(-5px);
+}
